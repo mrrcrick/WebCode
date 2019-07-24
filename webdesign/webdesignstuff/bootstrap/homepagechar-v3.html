@@ -15,15 +15,15 @@
 	  padding:0px;
 	 }
      .logo {
-       width:182px;
-       height:83px;
+       width:240px;
+       height:123px;
        display:inline-block;
-       background: url(images/PCAP-Logo-transparent-backgroundscaled.png); 
+       background: url(images/pcaplogo.png); 
        background-repeat:no-repeat;
-       background-size: 181px 82px;
+       background-size: 238px 122px;
        padding:0px;
        margin:3px;
-       margin-left:5px;
+       margin-left:0px;
        position:relative;
      }
      .heroimageoverlay {
@@ -31,7 +31,8 @@
       position:absolute;
       width:100%;
       height:99.5%;
-	  padding-top:130px;
+	    padding:130px 10px 0px 15px;
+    
       background-color: rgba(1, 25, 147, 0.35);
 	        border-bottom: solid 3px rgb(1, 25, 147);
 
@@ -49,12 +50,12 @@
       left:0px;
 	  z-index:2;
       width:100%;
-      height:88px;
+      height:125px;
       margin:0px;
       padding:0px;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 0.5);
       vertical-align:top;
-      border-bottom: solid 3px rgb(1, 25, 147);
+      padding:0px;
 	
      
      
@@ -100,6 +101,7 @@
 		line-height: 50px;
 		size:1em;
 		font weight:700;
+    border-radius: 5px;
 	  
 	  }
 	  
@@ -131,7 +133,14 @@
 		weight:600;
 		font-family: Arial,"Times New Roman", Times, serif;
 	  }
-      
+    
+    .info-grey {
+      background-color:rgba(192,192,192,1)
+    }
+    
+    .info-orange {
+      background-color:rgba(255,140,1,1);
+    }
        .rowimageoverlay {
      top: 0px;
       position:absolute;
@@ -172,12 +181,12 @@
 			 <div style="display:inline;text-align: center;line-height: 50px;">
            
        
-       <span style="margin:20px;margin-left:10px;position:absolute;font-size:1em;color:rgb(1, 25, 147);"> 
-       <i class="fa fa-twitter-square" style="font-size:24px"></i>
-       <i class="fa fa-youtube-play" style="font-size:24px"></i>
-       <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-       <i class="fa fa-phone-square" style="font-size:24px"></i>
-       HOME ABOUT CONTACT US </span>
+       <span style="margin:40px;margin-left:-10px;width:100%;height:45px;background-color:rgba(1, 25, 147,0.7); position:absolute;font-size:1.2em;color:rgb(255, 255, 255);"> 
+       <i class="fa fa-twitter-square" style="font-size:24px"></i>&nbsp; 
+       <i class="fa fa-youtube-play" style="font-size:24px"></i>&nbsp; 
+       <i class="fa fa-linkedin-square" style="font-size:24px"></i>&nbsp; 
+       <i class="fa fa-phone-square" style="font-size:24px"></i>&nbsp; &nbsp; &nbsp; &nbsp; 
+       HOME ABOUT CONTACT US NEWS SIGN UP MENTORING WORKSHOPS</span>
 			      
 			 </div>
               
@@ -197,15 +206,19 @@
                </div>
                <div class="heroimageoverlay">
 			      <div class="row">
-					 <div class="col-md-6">
-					   <div style="text-align:left;font-size:2em;"><span style="color:white;">     Improving Lives Through </span>
-					   <span style="color:rgba(255,140,0);"><p>     Education And</p></span> 
-					   <span style="color:white;">    Social Engagment</span></div>
+					 <div class="col-md-4">
+					   <div style="text-align:left;font-size:1.5em;padding:10px;"><span style="color:white;">     
+             <p><i class="fa fa-bullseye"></i> The Policy Centre for African Peoples (PCAP)</p>
+             <p>was founded in the UK in 2008 to provide</p>
+             African and other communities with avenues
+             for improving their lives through education.
+             
+             </span></div>
 					  </div>
-					   <div class="col-md-6"> 
+            <div class="col-md-4"></div>
+					   <div class="col-md-4"> 
 						<div id="headertextbx" style="color:rgb(1, 25, 147);font-size:2em; text-align:left;">  
-							<p>Mentoring</p>
-							<p>Social Engagment</p>
+						
 						
 						</div>
 						</div>
@@ -222,7 +235,7 @@
           <section>
           <div class="row" style="margin-left:5px;margin-right:5px;">
                    
-                  <div class="col-md-4 info-col"><div  class="infoheading" style="background-color:rgb(192,192,192);">
+                  <div class="col-md-4 info-col"><div  class="infoheading info-grey ">
 				  <b><i class="fa fa-graduation-cap"></i> EDUCATION</b>
 				  </div>
 				  We deliver workshops, masterclasses and other
@@ -237,7 +250,7 @@
 
 				   </div>
 				   
-                  <div class="col-md-4 info-col" ><div class="infoheading" style="background-color:rgba(255,140,0);"><i class="fa fa-handshake-o"></i><b> SOCIAL ENGAGEMENT</b></div>
+                  <div class="col-md-4 info-col" ><div class="infoheading info-orange" ><i class="fa fa-handshake-o"></i><b> SOCIAL ENGAGEMENT</b></div>
 					We train, nurture and encourage people who
 					participate in our programmes to become agents of
 					positive social change.
