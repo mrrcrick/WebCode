@@ -263,6 +263,49 @@
  text-align:left;
  padding:10px;
 }
+.burger-menu {
+ display:none;
+ position:relative;
+ height:45px;
+ width:60px;
+ margin:0px;
+ padding-left:10px;
+ margin-top:-100px;
+ left:60%;
+ margin-left:60px;
+ font-size:1em;
+ color:rgb(1, 25, 147);
+ border: 2px solid rgb(1, 25, 147);
+ border-radius:5px;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(1, 25, 147);
+  margin: 6px 0;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  .nav-cont {
+   display:none;
+  }
+  .nav-row-top {
+  display:none;
+  }
+  .burger-menu {
+  display:block;
+  }
+  .heroimageoverlay {
+    
+    
+      background-color: rgba(1, 25, 147, 0.7);
+	        
+
+     
+     }
+}
 
 
    
@@ -270,6 +313,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <title>--- TODO ---</title>
 
@@ -291,7 +335,12 @@
 		   
              <div class="logo">
              </div>
-             <div style="position:absolute;height:40px;margin:0px;top:20px;left:300px;font-size:1em;color:rgb(1, 25, 147);">
+             <div class="burger-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+             </div>
+             <div class="nav-row-top" style="position:absolute;height:40px;margin:0px;top:20px;left:250px;font-size:1em;color:rgb(1, 25, 147);">
                 <i class="fa fa-twitter-square" style="font-size:24px"></i>&nbsp; 
                 <i class="fa fa-youtube-play" style="font-size:24px"></i>&nbsp; 
                 <i class="fa fa-linkedin-square" style="font-size:24px"></i>&nbsp; 
@@ -496,7 +545,9 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 	 <script>$(document).ready(
 	 function(){
-	
+	function myFunction(x) {
+  x.classList.toggle("change");
+}
 // Wrap every letter in a span
 var textWrapper = document.querySelector('#headertextbx');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
