@@ -203,6 +203,66 @@
    position:absolute;font-size:1.2em;color:rgb(255, 255, 255);
  
  }
+ .mob-nav-cont {
+  display:none;
+  height:600px;
+  margin-top:45px;
+  position:relative;
+  background-color:rgba(1, 25, 147,1);
+  list-style-type:none;
+  
+ 
+ }
+ .mob-nav-cont li{
+  min-width:50px;
+  height:100%;
+  margin:8px;
+  font-family: 'Roboto', sans-serif;
+  font-size:18px;
+  font-weight:500;
+  color:rgb(255, 255, 255);
+  line-height:40px;
+ list-style-type:none;
+}
+
+.mob-nav-cont li > ul {
+ display:none;
+ height:20%;
+}
+
+.mob-nav-cont li:hover {
+  color:rgba(255,140,1,1);
+  
+}
+
+
+.mob-nav-cont li:hover > ul {
+ line-height:40px;
+ background-color:rgba(1, 25, 147,0.6);
+ display:block;
+ width:200px;
+ margin:0px;
+ padding:0px;
+ height:10%;
+
+}
+
+.mob-nav-cont li a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  height:10%;
+}
+
+.mob-nav-cont li > ul > li {
+ display:block;
+ font-size :18px;
+ padding:0px;
+ margin-top: 10px;
+}
+
+.mob-nav-cont li > ul > li:before {
+ content:"\2022 \0020\0020";
+}
 
 .nav-cont li{
   display:inline-block;
@@ -300,20 +360,17 @@
   .heroimageoverlay {
     
     
-      background-color: rgba(1, 25, 147, 0.7);
+      background-color: rgba(1, 25, 147, 0.8);
 	        
 
      
      }
       .nav-row {
 	 
-      background-color: rgba(255, 255, 255, 0.6);
-      
-	
-     
-     
-     
+      background-color: rgba(255, 255, 255, 1); 
      }
+     
+    
 }
 
 
@@ -359,6 +416,17 @@
                 <button type="button" class="btn btn-success">VOLUNTEER</button>
              
              </div>
+             <div class="mob-nav-cont">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Who we are</a><ul><li>About us</li> <li> Our team</li></ul></li>
+                <li><a href="#">What we do</a><ul><li>Lead4Hope</li> <li> Mentoring</li> <li>Workshops</li></ul></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News letter</a><ul><li>Articles</li><li>Sign up</li></ul></li>
+                <li><a href="#">Support Our Work</a><ul><li>Donate</li><li>Volunteer</li></ul></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
              
             <div class="nav-cont">
               <ul>
@@ -554,9 +622,18 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 	 <script>$(document).ready(
 	 function(){
-	function myFunction(x) {
-  x.classList.toggle("change");
-}
+// burger-menu click
+$(".burger-menu").click(function(){
+  console.log("****");
+  $(".mob-nav-cont").animate({
+      width: "toggle"
+    });
+  
+  
+  
+  }
+);
+
 // Wrap every letter in a span
 var textWrapper = document.querySelector('#headertextbx');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
