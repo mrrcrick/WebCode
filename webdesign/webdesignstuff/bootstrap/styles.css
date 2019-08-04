@@ -222,7 +222,7 @@
  /* =========================================Mobile Nav Bar CSS ========================================= */
  .mob-nav-cont {
   display:none;
-  height:600px;
+  height:auto;
   margin-top:45px;
   position:relative;
   background-color:rgba(1, 25, 147,1);
@@ -243,7 +243,6 @@
 }
 
 .mob-nav-cont li > ul {
- display:none;
  height:20%;
 }
 
@@ -252,17 +251,6 @@
   
 }
 
-
-.mob-nav-cont li:hover > ul {
- line-height:40px;
- background-color:rgba(1, 25, 147,0.6);
- display:block;
- width:200px;
- margin:0px;
- padding:0px;
- height:10%;
-
-}
 
 .mob-nav-cont li a {
   color: inherit; /* blue colors for links too */
