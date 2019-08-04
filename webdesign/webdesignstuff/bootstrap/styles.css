@@ -1,0 +1,432 @@
+ body,html {
+    font-size:16px;
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+     }
+     
+     
+     section {
+	  margin:0px;
+	  padding:0px;
+	 }
+     .logo {
+       width:240px;
+       height:123px;
+       display:inline-block;
+       background: url(images/pcaplogo.png); 
+       background-repeat:no-repeat;
+       background-size: 238px 122px;
+       padding:0px;
+       margin:3px;
+       margin-top:1px;
+       margin-left:0px;
+       position:relative;
+     }
+     .heroimageoverlay {
+     top: 0px;
+      position:absolute;
+      width:100%;
+      height:99.5%;
+	    padding:130px 10px 0px 15px;
+    
+      background-color: rgba(1, 25, 147, 0.35);
+	        border-bottom: solid 3px rgb(1, 25, 147);
+
+     
+     }
+     .content {
+       width:100%;
+       margin-left: 0px;
+       padding: 0px;
+       position: relative;
+     }
+     .nav-row {
+	  position:absolute;
+	  display:inline-block;
+      left:0px;
+	  z-index:2;
+      width:100%;
+      height:122px;
+      margin:0px;
+      padding:0px;
+      background-color: rgba(255, 255, 255, 0.8);
+      vertical-align:top;
+      padding:0px;
+	
+     
+     
+     
+     }
+	 .nav-row h1,h2 {
+	 display:inline-block;
+	 padding-bottom:30px;
+	 }
+     
+     
+     .main-image {
+     display:inline-block;
+     width:100%;
+     height:550px;
+     margin:0px;
+	 
+	 
+      background: url(images/YouthGame7.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: top left;
+      padding:0px;
+     }
+    .secondary-info-row {
+    background-color: rgba(25,25,80, 1);
+	  padding:-1px;
+    margin-left:-1px;
+     
+     }
+   
+	  
+	  .infoheading {
+	   margin-top:1px;
+	   padding:0px;
+	    height: 50px;
+		text-align:center;
+		color:white;
+		width:100%;
+		background-color:rgba(25,25,80, 1);
+		line-height: 50px;
+		size:1em;
+		font weight:700;
+    border-radius: 5px;
+	  
+	  }
+	  
+      .inforow {
+       display:block;
+       width:105%;
+       height:auto;
+       margin:0px;
+       position:relative;
+        background: url(images/rowbackground1.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: top left;
+        padding:0px;
+        margin-left:-20px
+        margin-bottom:200px;
+      
+   
+      }
+      
+      inforow div {
+       height:inherit;
+      }
+	  
+	  
+	  .info-col {
+	    padding:10px;
+		
+		font-size: 1.2em;
+		color:rgba(25,25,80, 1);
+		height:300px;
+		width:100%;
+		weight:600;
+	  }
+    
+    .info-grey {
+      background-color: rgba(192,192,192,1);
+    }
+    .info-purple {
+    	background-color: rgba(139,0,139,1);
+    }
+    
+    .info-orange {
+      background-color: rgba(255,140,1,1);
+    }
+   
+     .overlaycolor {
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background-color: rgba(1, 25, 147, 0.9);
+      padding: 20px 0px 100px auto;
+     }
+
+	  .overlaycolor.orange  {
+	    background-color: rgba(255,140,1,0.9);
+	  }
+     .overlaycolor.purple  {
+	    background-color: rgba(162,107,162,0.9);
+	  }
+	 
+	 
+	 .overlaycolor .picCol {
+	  display:inline-block;
+	  min-width:200px;
+    max-width:400px
+    min-height:200px;
+    max-height: 600px;
+	  padding:0px;
+	  margin-left:0px;
+    margin-right:0px;
+    margin-bottom:10px;
+	 }
+   
+   .picCol img {
+    max-width: 100%; 
+    max-height: 100%;
+  
+   
+    }
+   
+   .overlaycolor .titleheader {
+    width:100%;
+    text-align:center;
+    color:white;
+    margin:auto;
+   }
+   
+	 .overlaycolor .textCol {
+	  display:inline-block;
+	  color:white;
+	  padding:0px 20px 10px 0px;
+    margin-right: 100px;
+    margin-left:0px;
+	  font-size:1.4em;
+    font-weight: 400;
+    font-style: normal;
+	 }
+   
+ .nav-cont {
+   position:absolute;
+   margin-top:-55px;
+   left:237px;
+   padding-left:5%;
+   width:100%;
+  
+   height:45px;
+   background-color:rgba(1, 25, 147,0.7);
+   position:absolute;font-size:1.2em;color:rgb(255, 255, 255);
+ 
+ }
+ 
+ /* =========================================Mobile Nav Bar CSS ========================================= */
+ .mob-nav-cont {
+  display:none;
+  height:600px;
+  margin-top:45px;
+  position:relative;
+  background-color:rgba(1, 25, 147,1);
+  list-style-type:none;
+  
+ 
+ }
+ .mob-nav-cont li{
+  min-width:50px;
+  height:100%;
+  margin:8px;
+  font-family: 'Roboto', sans-serif;
+  font-size:18px;
+  font-weight:500;
+  color:rgb(255, 255, 255);
+  line-height:40px;
+ list-style-type:none;
+}
+
+.mob-nav-cont li > ul {
+ display:none;
+ height:20%;
+}
+
+.mob-nav-cont li:hover {
+  color:rgba(255,140,1,1);
+  
+}
+
+
+.mob-nav-cont li:hover > ul {
+ line-height:40px;
+ background-color:rgba(1, 25, 147,0.6);
+ display:block;
+ width:200px;
+ margin:0px;
+ padding:0px;
+ height:10%;
+
+}
+
+.mob-nav-cont li a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  height:10%;
+}
+
+.mob-nav-cont li > ul > li {
+ display:block;
+ font-size :18px;
+ padding:0px;
+ margin-top: 10px;
+}
+
+.mob-nav-cont li > ul > li:before {
+ content:"\2022 \0020\0020";
+}
+/* ================================Full screen Nav Bar CSS ============================*/
+.nav-cont li{
+  display:inline-block;
+  min-width:80px;
+  height:40px;
+  text-align:center;
+  margin:8px;
+  font-family: 'Roboto', sans-serif;
+  font-size:0.9em;
+  font-weight:500;
+  color:rgb(255, 255, 255);
+  line-height:40px;
+ 
+}
+
+.nav-cont li > ul {
+ display:none;
+}
+
+.nav-cont li:hover {
+  color:rgba(255,140,1,1);
+  weight:800;
+  
+}
+
+.nav-cont li:hover:before {
+ content:"\2022 \0020";
+
+}
+
+.nav-cont li li:hover:before {
+ content:"";
+
+}
+
+.nav-cont li:hover > ul {
+ position:absolute;
+ top:45px;
+ line-height:40px;
+ background-color:rgba(1, 25, 147,0.6);
+ display:block;
+ width:auto;
+ margin:0px;
+ text-align:left;
+ padding:0px;
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+
+}
+
+.nav-cont li a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.mainCalltoAcionBtn {
+  float:right;
+  margin-right:300px;
+  padding:0px;
+ 
+}
+.mainCalltoAcionBtn button {
+  width:120px;
+  height:50px;
+}
+.nav-cont li > ul > li {
+ display:block;
+ text-align:left;
+ padding:10px;
+}
+
+/* ==================Burger Menu CSS =======================================*/
+.burger-menu {
+ display:none;
+ position:relative;
+ height:45px;
+ width:60px;
+ margin:0px;
+ padding-left:10px;
+ margin-top:-100px;
+ left:60%;
+ margin-left:60px;
+ font-size:1em;
+ color:rgb(1, 25, 147);
+ border: 2px solid rgb(1, 25, 147);
+ border-radius:5px;
+}
+.burger-menu:hover {
+ cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(1, 25, 147);
+  margin: 6px 0;
+}
+/* ============================Meet The Team Css===========================*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* ======================Media Queries ============================= */
+
+@media only screen and (max-width: 1000px) {
+  .nav-cont {
+   display:none;
+  }
+  .nav-row-top {
+  display:none;
+  }
+  .burger-menu {
+  display:block;
+  }
+  .heroimageoverlay {
+    
+    
+      background-color: rgba(1, 25, 147, 0.8);
+	        
+
+     
+     }
+      .nav-row {
+	 
+      background-color: rgba(255, 255, 255, 1); 
+     }
+   .overlaycolor .textCol {
+     text-align:left;
+     padding:auto;
+     padding-left:10px;
+     margin-right:0px;
+     margin-left:0px;
+   }   
+   .row {
+   margin:0px;
+   }
+   .picCol img {
+    padding:0px;
+    margin:0px;
+   }
+     
+     
+    
+}
