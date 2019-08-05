@@ -229,23 +229,25 @@
   position:relative;
   background-color:rgba(1, 25, 147,1);
   list-style-type:none;
+  overflow:auto;
   
  
  }
  .mob-nav-cont li{
   min-width:50px;
   height:100%;
-  margin:8px;
+  margin:2px;
   font-family: 'Roboto', sans-serif;
-  font-size:18px;
-  font-weight:500;
+  font-size:14px;
+  font-weight:400;
   color:rgb(255, 255, 255);
-  line-height:40px;
+  line-height:10px;
+  padding:2px;
  list-style-type:none;
 }
 
 .mob-nav-cont li > ul {
- height:20%;
+ height:15%;
 }
 
 .mob-nav-cont li:hover {
@@ -262,7 +264,7 @@
 
 .mob-nav-cont li > ul > li {
  display:block;
- font-size :18px;
+ font-size :14px;
  padding:0px;
  margin-top: 10px;
 }
